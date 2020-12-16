@@ -13,7 +13,40 @@ The module gives you the `LSystem` class with the same structure as listed out o
 
 
 
-### 
+### A quick tutorial
+
+```python
+>>> from LSystem import LSystem # Import the LSystem class from the LSystem module
+>>> ################################################
+>>> # Algae will be an instance of LSystem
+>>> # with 
+>>> # 	variables being the list ['A', 'B']
+>>> #	no constants 
+>>> #	axiom 'A'
+>>> #	rules A -> AB and B -> A
+>>> ################################################
+>>> Algae = LSystem(variables = "A B".split(), constants =[], axiom="A", rules={"A": "AB", "B":"A"})
+>>> Algae
+['A']
+>>> Algae.variables
+['A', 'B']
+>>> Algae.constants
+[]
+>>> Algae.rules
+{'A': 'AB', 'B': 'A'}
+>>> Algae.axiom
+'A'
+>>> Algae
+['A']
+>>> Algae.iterate()
+>>> Algae
+['A', 'AB']
+>>> Algae.iterate()
+>>> Algae
+['A', 'AB', 'ABA']
+>>> Algae.system
+['A', 'AB', 'ABA']
+```
 
 ## Invitation
 
