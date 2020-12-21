@@ -16,7 +16,7 @@ The module gives you the `LSystem` class with the same structure as listed out o
 ### A quick tutorial
 
 ```python
->>> from LSystem import LSystem # Import the LSystem class from the LSystem module
+>>> from LindenmayerSystem import LSystem # Import the LSystem class from the LSystem module
 >>> ################################################
 >>> # Algae will be an instance of LSystem
 >>> # with 
