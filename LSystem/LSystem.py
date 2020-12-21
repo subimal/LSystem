@@ -8,6 +8,8 @@ class LSystem:
         for i in range(iterations):
             self.iterate()
 
+    def __repr__(self):
+        return str(self.system)
 
     def iterate(self, iterations=1):
         for i in range(iterations):
